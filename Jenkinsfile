@@ -1,5 +1,10 @@
 pipeline {
-    agent docker 
+    agent {
+        docker {
+            image 'node'
+            args '-u root'
+        }
+    } 
     stages {
         stage('PEP8 Check') {
             steps {
