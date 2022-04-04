@@ -105,4 +105,3 @@ if __name__ == "__main__":
     print('\n------------------Displaying the fetched information------------------\n')
     print(TABLE)
     print(True)
-	print(btb)
