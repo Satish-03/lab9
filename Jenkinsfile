@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'PEP8 Checks...'
                 sh 'python3 --version'
-                sh 'Hi Satish, you made it'
+                echo 'Hi Satish, you made it'
                
                 
             }
