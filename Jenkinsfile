@@ -6,7 +6,7 @@ pipeline {
                 echo 'PEP8 Checks...'
                 sh 'python3 --version'
                 echo 'Hi Satish, you made it'
-                echo 'Email senet'
+                echo 'Email sent'
                
                 
             }
