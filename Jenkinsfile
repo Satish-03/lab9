@@ -13,7 +13,7 @@ pipeline {
                 sh 'apt-get upgrade -y'
                 sh 'apt-get install -y python3-pip'
                 sh 'python3 -m pip install --upgrade pip'
-                sh 'python3 -m pip install ncclient pandas ipaddress netaddr prettytable'
+                sh 'python3 -m pip install ncclient pandas ipaddress netaddr prettytable pylint'
             }
         }
         stage('PEP8 Check') {
