@@ -27,7 +27,7 @@ pipeline {
         stage('Unit tests') {
             steps {
                 echo 'Performing unit tests...'
-                sh 'python3 -m unittest obj2.py'
+                sh 'python3 -m unittest netman_jenkins_obj2.py'
             }
         }
     }
