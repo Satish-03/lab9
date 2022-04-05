@@ -28,7 +28,6 @@ pipeline {
             steps {
                 echo 'Performing unit tests...'
                 sh 'python3 -m unittest obj2.py'
-           
             }
         }
     }
