@@ -19,12 +19,16 @@ pipeline {
         stage('PEP8 Check') {
             steps {
                 echo 'PEP8 Checks...'
-                sh 'python3 --version'
-                echo 'Hi Satish, you made it'
-                echo 'Email sent'
                 sh 'pylint netman_netconf_obj2.py "--fail-under=5"'
                
                 
+            }
+        }
+        stage('Unit tests') {
+            steps {
+                echo 'Performing unit tests...'
+                sh 'python3 -m unittest obj2.py'
+           
             }
         }
     }
